@@ -18,4 +18,37 @@ Profile ID, Image ID, File URL --. to be stored in distributed file system
 
 
 a) client app on mobile.--> clicks button and then we have profile services
- - register to the app
+ - register to the app (username . password) profile is created. in database.
+- update profile(username) authentication mechanism.(username/ password is not secure.) 
+
+-token is used to authentication for the profile services , should be good enough. 
+and use a gateway service
+a) gateway - takes request asks the profile servcies if it is aunthenticated one or not. 
+b) profile services says yes/no.
+c) then direct it to the correct services or else fail the request.
+d) forward the response to the client.
+
+-Do not store images and profile services in the same database.
+-images to be stored in distributed file system.
+
+
+
+#-Direct messaging . How to connect from client to client ??
+Push send message from UD1, UD2 . 
+use peer to peer protocol for communication.
+XMPP will take web socket connection/ TCP.
+
+#SESSIONS will store information
+
+# Matches - Matcher services save the info.
+- communication between matcher and sessions 
+
+# Recommending people to you. (RECOMMENDATION SERVICES)
+- Who are people close to you.
+- GENDER, age group, location - area
+
+Cassandra. Dynamo or do sharding.
+Database : Sharding --> horizontal partitioning (names [A-J] goes to server 36, names [k- P] goes to 79, 
+Have master slave architecture to avoid single point of failure.
+
+- 
