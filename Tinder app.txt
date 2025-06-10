@@ -1,0 +1,21 @@
+#Tinder architecture.
+- ER Diagram 
+- services
+- clients
+
+-front to back.users needs .
+-How services are fulfilled!!
+
+- Storing profiles (images mini 5 of them)
+  How to store them ? as a file / blob (binary large object) [clob (character large object)]
+  mutability, transaction guarentees(ACID), indexes to improve search
+- Recommended matches (No of active users)
+- Note Matches ( 0.1%
+- Direct messaging
+- Access control
+Files are cheaper, faster, CDN.
+Profile ID, Image ID, File URL --. to be stored in distributed file system
+
+
+a) client app on mobile.--> clicks button and then we have profile services
+ - register to the app
