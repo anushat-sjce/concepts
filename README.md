@@ -114,3 +114,10 @@ Elastic search - compaction
 
 
 #API Design
+GET, POST, PUT
+Parameter definition, 
+if response is bigger, then break it like TCP = 10, next 20, next 30...
+Pagination and fragmentation.
+Cache the info.
+
+
