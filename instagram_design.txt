@@ -1,0 +1,24 @@
+## Instagram feature needs 
+- Store/Get images
+- provide like, comment facility
+- follow someone
+- Publish a news feed.
+
+1. Store. Get images. use file system
+
+2. Like , Comment 
+- POST operation.
+reply can be made on a single comment.
+like a comment.
+
+a) Feature "likes"
+
+Type,          Active,        ParentID,         UserId,      Timestamp
+Comment/
+post
+
+Select count (*) from likes 
+where POSTID = "userID"
+
+OR have an activity table.
+Define Likes for a parentID
